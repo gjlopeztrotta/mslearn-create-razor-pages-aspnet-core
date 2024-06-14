@@ -3,7 +3,7 @@ using ContosoPizza.Models;
 
 namespace ContosoPizza.Services
 {
-    public class PizzaService
+    public class PizzaService 
     {
         private readonly PizzaContext _context = default!;
 
