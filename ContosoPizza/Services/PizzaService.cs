@@ -21,6 +21,16 @@ namespace ContosoPizza.Services
             return new List<Pizza>();
         }
 
+
+        public int CountPizzas()
+        {
+            if(_context.Pizzas != null)
+            {
+                return _context.Pizzas.Count();
+            }
+            return 0;
+        }
+
         public void AddPizza(Pizza pizza)
         {
             if (_context.Pizzas != null)

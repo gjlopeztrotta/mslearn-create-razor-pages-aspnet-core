@@ -1,0 +1,13 @@
+@page
+@model ContosoPizza.Pages.PizzaDetail 
+@{
+    ViewData["Title"] = "PizzaDetail ";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h1 class="btn-primary"> @Model.get_date()</h1>
+
+    <h2 class="btn-primary"> @Model.get_count()</h2>
+</div>
